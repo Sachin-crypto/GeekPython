@@ -1,10 +1,114 @@
-.App {
-  text-align: center;
+:root {
+  --brand-color: #8b5cf6;
+  --dark-color: #202c39;
+  --mid-color: #283845;
+  --light-color: #ffffff;
+  --grey-color: #e6e6e6;
+  --logo-color: #ffdd00;
+  --text-font: "Mukta", sans-serif;
+  --header-font: "Patrick Hand", cursive;
+  --logo-font: "Satisfy", cursive;
+
+  background-color: var(--light-color);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: var(--text-font);
+  color: var(--dark-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: smaller;
+  background-color: var(--grey-color);
+}
+
+pre code{
+  background-color: transparent;
+}
+
+h1 {
+  font-family: var(--header-font);
+  font-size: 280%;
+}
+
+h2 {
+  font-family: var(--header-font);
+  font-size: 250%;
+}
+
+h3 {
+  font-family: var(--header-font);
+  font-size: 200%;
+}
+
+blockquote {
+  background: #fbf8cc;
+  border-radius: 5px;
+}
+
+.section-border {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: var(--grey-color);
+  padding: 5px 0px;
+}
+
+.cursive {
+  font-family: "Patrick Hand", cursive;
+}
+
+.loading {
+  color: var(--dark-color);
+}
+
+.small-text {
+  font-size: smaller;
+}
+
+.right-align-text {
+  text-align: right;
+}
+
+.centered-div {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  height: 50px;
+  padding: 10px;
+  margin: 15px;
+  font-family: var(--text-font);
+  color: var(--light-color);
+  background-color: var(--mid-color);
+  border-radius: 20px;
+  border-width: 0px;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--dark-color);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +117,12 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  color: var(--light-color);
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  text-decoration: underline;
+  color: var(--brand-color);
 }

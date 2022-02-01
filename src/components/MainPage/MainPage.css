@@ -1,0 +1,24 @@
+.main-page {
+    padding: 20px 60px;
+    margin: 0px 100px;
+}
+
+@media (max-width:780px) {
+    .main-page {
+        padding: 10px 10px;
+        margin: 0px 0px;
+    }
+}
+
+.heading {
+    padding: 0px 40px;
+    text-decoration: underline;
+    text-decoration-color: var(--brand-color);
+    text-decoration-thickness: 5px;
+    text-decoration-skip: edges;
+    -moz-text-decoration-color: var(--brand-color);
+}
+
+.text {
+    padding: 0px 40px;
+}
