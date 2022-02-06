@@ -5,8 +5,9 @@
   --light-color: #ffffff;
   --grey-color: #e6e6e6;
   --logo-color: #ffdd00;
-  --text-font: "Mukta", sans-serif;
-  --header-font: "Patrick Hand", cursive;
+  --text-font: "Overpass", sans-serif;
+  --header-font: "Varela Round", sans-serif;
+  --title-font: "Overlock", cursive;
   --logo-font: "Satisfy", cursive;
 
   background-color: var(--light-color);
@@ -23,27 +24,31 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-  font-size: smaller;
+  font-size: 15px;
   background-color: var(--grey-color);
 }
 
-pre code{
+pre code {
   background-color: transparent;
 }
 
 h1 {
-  font-family: var(--header-font);
-  font-size: 280%;
+  font-family: var(--title-font);
+  font-size: 50px;
 }
 
 h2 {
   font-family: var(--header-font);
-  font-size: 250%;
+  font-size: 40px;
 }
 
 h3 {
   font-family: var(--header-font);
-  font-size: 200%;
+  font-size: 30px;
+}
+
+p {
+  font-size: large;
 }
 
 blockquote {
@@ -109,12 +114,6 @@ button:hover {
 
 button:active {
   background-color: var(--dark-color);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 a {
