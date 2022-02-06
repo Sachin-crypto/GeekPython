@@ -6,7 +6,7 @@
   --grey-color: #e6e6e6;
   --logo-color: #ffdd00;
   --text-font: "Overpass", sans-serif;
-  --header-font: "Varela Round", sans-serif;
+  --header-font: 'Signika Negative', sans-serif;
   --title-font: "Overlock", cursive;
   --logo-font: "Satisfy", cursive;
 
@@ -40,11 +40,13 @@ h1 {
 h2 {
   font-family: var(--header-font);
   font-size: 200%;
+  font-weight: 400;
 }
 
 h3 {
   font-family: var(--header-font);
-  font-size: 150%;
+  font-size: 180%;
+  font-weight: 400;
 }
 
 p {
@@ -92,7 +94,7 @@ blockquote {
   padding: 20px;
 }
 
-button {
+/* button {
   height: 50px;
   padding: 10px;
   margin: 15px;
@@ -114,7 +116,7 @@ button:hover {
 
 button:active {
   background-color: var(--dark-color);
-}
+} */
 
 a {
   color: var(--light-color);

@@ -24,7 +24,7 @@ function MainPage() {
         <>
         <div className='section-border'>
             <div className='main-page'>
-            <h2 className='heading'>About the author</h2>
+            <h2 className='heading'>About Me</h2>
             <p className='text'>Hi, I am Sachin Pal and I am a Python developer.<br />
                  My areas of interests are writing Python code, Machine Learning and Deep Learning.<br />
                  As a developer, my focus is always on writing readable and reliable code.<br />
@@ -37,7 +37,7 @@ function MainPage() {
             <h2 className='heading'>Latest articles</h2> 
         </div>
         { loading 
-            ? <div className='centered-div loading'>Loading blog posts...</div> 
+            ? <div className='centered-div loading'>Loading articles...</div> 
             : <BlogGrid articles={articles} /> }
         </>
     )
