@@ -34,17 +34,17 @@ pre code {
 
 h1 {
   font-family: var(--title-font);
-  font-size: 50px;
+  font-size: 250%;
 }
 
 h2 {
   font-family: var(--header-font);
-  font-size: 40px;
+  font-size: 200%;
 }
 
 h3 {
   font-family: var(--header-font);
-  font-size: 30px;
+  font-size: 150%;
 }
 
 p {
