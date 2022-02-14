@@ -34,10 +34,10 @@ function MainPage() {
             </div>
         </div>
         <div className='main-page'>
-            <h2 className='heading'>Latest articles</h2> 
+            <h2 className='heading'>Recently Added</h2> 
         </div>
         { loading 
-            ? <div className='centered-div loading'>Loading articles...</div> 
+            ? <div className='centered-div loading'>Loading articles for you...</div> 
             : <BlogGrid articles={articles} /> }
         </>
     )

@@ -13,6 +13,7 @@ function BlogPostInfo(props: Props) {
     const added = moment(article.dateAdded);
     const updated = moment(article.dateUpdated ?? article.dateAdded);
     const author = article.author.name
+    const photo = article.author.photo
     return (
     <>
         <div className='tags section-border'>
@@ -20,6 +21,8 @@ function BlogPostInfo(props: Props) {
         </div>
         <div className='article-details section-border'>
             <div className='article-item'><a href={HashnodeArticleUrl(article.slug)} >{article.totalReactions} reactions ❤</a></div>
+            {/* Todo: Add a link to about page */}
+            <img className='author-img' src={photo} alt={author} />
             <div className='article-item'>Author: {author}</div>
             <div className='article-item'>Published: {moment(added).format("ll")}</div>
             <div className='article-item'>Last updated: {moment(updated).format("ll")}</div>

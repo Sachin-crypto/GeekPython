@@ -9,6 +9,7 @@ export interface ArticleSummary {
 
 export interface Article {
   author: any;
+  photo: string;
   title: string;
   brief: string;
   slug: string;

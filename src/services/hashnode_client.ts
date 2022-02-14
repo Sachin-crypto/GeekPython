@@ -52,6 +52,7 @@ export class HashnodeClient {
                 }
                 author {
                     name
+                    photo
                 }
             }
         }`;

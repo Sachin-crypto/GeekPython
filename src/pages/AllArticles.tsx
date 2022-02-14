@@ -34,7 +34,7 @@ function AllArticles() {
             <h2 className='heading'>Latest articles</h2> 
         </div>
         { loading 
-            ? <div className='centered-div loading'>Loading blog posts...</div> 
+            ? <div className='centered-div loading'>Loading articles for you...</div> 
             : <BlogGrid articles={articles} /> }
         </>
     )
